@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jquery utmz switch test</title>
+		<script type="text/ecmascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/ecmascript" src="../release/jquery.utmz.switch-0.1.min.js"></script>
+		<script type="text/ecmascript" src="test.js"></script>
+	</head>
+	
+	<body>
+		<h1>jQuery UTMZ Switch</h1>
+		<p>This jquery plugin looks to see if a google adwords campaign id is in the __utmz cookie set by google analytics and if so will switch out text on the page.</p>
+		<p class="phone">123-456-7890</p>
+		<p>To utilize this plugin, use the code below.</p>
+		<code>
+			<pre>
+	$(document).ready(function() {
+		$('.phone').utmzSwitch({ text: "(098) 765-4321" });
+	});
+			</pre>
+		</code>
+	</body>
+</html>
